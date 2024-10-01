@@ -26,6 +26,10 @@ else:
 
     print("The credit card number is invalid.")
 
+if len(card_number) == 15 and card_number.isdigit():     
+    
+    print ("Card is valid.")
+
 def run_tests():
 
     assert is_credit_card_valid("4111111111111111"), '4111111111111111 should pass but did not'
